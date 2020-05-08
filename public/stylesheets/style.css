@@ -1,0 +1,290 @@
+/*style.css*/
+
+.header{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(0, 0, 41);
+    color: white;
+    margin-bottom: 0px;
+    left:0;
+    right:0;
+    top:0;
+    height: 100px;
+}
+
+h1{
+    position: relative;
+    left: 52.5%;
+    top: 10%;
+    margin-left:-100px;
+}
+
+.function{
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(59, 59, 107);
+    margin-top: 6%;
+    left:0;
+    position: fixed;
+    
+}
+
+.compose{
+    margin-left: 20px;
+    float: left;
+}
+
+
+.previous{
+    float: right;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+
+}
+
+button {
+    background-color: orange; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.next{
+    float:right;
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.mailbox{
+    height: 100%;
+    border: 1px solid black;
+    width: 20%;
+    position: fixed;
+    left: 0;
+    overflow: auto; 
+    background-color: rgb(59, 59, 107);
+    top: 21%;
+
+}
+.mailbox ul{
+    list-style-type: none;   
+    margin-top: 30px;
+}
+
+.mailbox li a{
+    text-decoration: none;
+    font-size: 18px;;
+    
+}
+
+.mailbox li{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#emailcontainer{
+    position: fixed;
+    margin-top: 12%;
+    margin-left: 25%;
+    z-index: 1;
+    width: 73%;
+    z-index: -1;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    margin-left: 40%;
+    margin-right: 0px;
+}
+
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    background-color: orange;
+    outline: none;
+    color: white;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropbtn, .dropbtn:focus {
+    background-color: red;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    border-radius: 12px;
+}
+  
+.dropdown-content a {
+    
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.show {
+    display: block;
+}
+  
+  
+
+ .to{
+     margin-bottom: 20px;
+ }
+
+ .totextbox{
+     margin-left: 32px;
+ }
+
+ .subject{
+     margin-bottom: 20px;
+ }
+
+ .textarea{
+     margin-bottom: 20px;
+ }
+
+ @media only screen and (max-width: 768px){
+    .mailbox li a{
+        text-decoration: none;
+        font-size: 12px;;
+        margin-left: 5px;
+    }
+
+    .mailbox ul{
+        padding:0px;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+        margin-left: 9%;
+        margin-right: 0px;
+    }
+
+    div.function{
+        margin-top: 24%;
+    }
+
+    .mailbox{
+        top:19.5%;
+    }
+
+    #emailcontainer{
+        top: 21%;
+        left: 22%;
+        width: 50%;
+        padding: 0px;
+        
+    }
+
+    #email{
+        padding: 0;
+        position: relative;
+        left: -40%;
+        width: 140%;
+        margin: 0;
+        margin-top: -15%;
+      
+    }
+
+    .mail input[type="checkbox"]{
+        margin-right: 5px !important;
+        margin-top: 10px !important;
+    }
+
+    .mail h3{
+        margin-right: 10px !important;
+        font-size: 8px;
+        width: 20%;
+        display: inline-block !important;
+    }
+
+    .time{
+        float: none;
+    }
+
+    .mailcontent {
+        width: 100%;
+    }
+
+    .mailcontent h2{
+        font-size: 13px;
+        width: 40% !important;
+        margin-right: 10px !important;
+    }
+
+    .mailcontent h3{
+        font-size: 11px;
+        margin-top: 10px !important;
+        margin-right: 10px !important;
+        margin-left: 0px;
+    }
+    .mailcontent h5{
+        font-size: 9px;
+        margin-right: 10px !important;
+        top: 10%;
+        padding: 0;
+    }
+
+    .mailcontent p{
+        font-size: 8px;
+    }
+
+    .totextbox{
+        width:60%;
+        margin-left: 10px;
+        border: 1px solid black;
+    }
+
+    .subject input[type="text"]{
+        width: 60%;
+        border: 1px solid black;
+    }
+
+    .content {
+        width: 100%;
+        border: 1px solid black;
+    }
+
+ }
+
+    
+
+
+
+
+
+

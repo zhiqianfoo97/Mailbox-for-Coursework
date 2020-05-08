@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>WebMail</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<script src="/javascripts/script.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body onload="showInbox()">
+    <div class="header">
+        <h1>Foo's Email</h1>
+    </div>
+
+    <div class="function">
+        <button class="compose" onclick="showCompose()">Compose</button>
+		<div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()" id="modal-opener">Move to ...</button>
+			<div class="dropdown-content" id="myDropdown">
+			  <a href="#">Inbox</a>
+			  <a href="#">Important</a>
+			  <a href="#">Sent</a>
+			  <a href="#">Trash</a>
+			</div>
+		</div> 
+	
+        <a href="#" id ="next" class="next" onclick="showNext()"> > </a>
+		<a href="#" id = "previous" class="previous" onclick="showPrevious()"> < </a>
+        
+	</div>
+	
+	
+
+    <div class="mailbox">
+        <ul>
+            <li><a href="#" id ="inbox" onclick="showInbox()"><i class='far fa-envelope' style="margin-right: 5px;"></i>  Inbox </a></li>
+			<li><a href="#" id ="important" onclick="showImportant()"><i class='fas fa-exclamation-circle' style="margin-right: 5px;"></i>  Important</a></li>
+            <li><a href="#" id ="sent" onclick="showSent()"><i class='fas fa-share-square' style="margin-right: 5px;"></i>  Sent</a></li>
+            <li><a href="#" id ="trash" onclick="showTrash()"><i class='far fa-trash-alt' style="margin-right: 5px;"></i>  Trash</a></li>
+        </ul>
+    </div>
+
+    <div id="emailcontainer"  >
+		<form id="email" >
+		
+		</form>
+	</div>
+
+
+
+</body>
+</html>
